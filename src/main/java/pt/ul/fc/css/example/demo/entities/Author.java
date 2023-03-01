@@ -25,7 +25,8 @@ public final class Author {
     }
 
     protected Author() {
-
+        this.name = "James";
+        this.surname = "Bond";
     }
 
     public Long getId() {

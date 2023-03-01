@@ -9,7 +9,6 @@ public class WebController {
 
     @RequestMapping("/")
     public String getIndex(Model model) {
-        System.out.println("heloo");
         return "index";
     }
 }
