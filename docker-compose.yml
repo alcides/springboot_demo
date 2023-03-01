@@ -2,7 +2,7 @@ version: "3"
 
 services:
   postgres:
-    image: postgres:latest
+    image: docker.io/postgres:latest
     network_mode: bridge
     container_name: postgres
     volumes:
@@ -20,6 +20,8 @@ services:
   # APP*****************************************
   springbootapp:
     image: springbootapp:latest
+    build:
+      context: .
     network_mode: bridge
     container_name: springbootapp
     expose:
@@ -28,8 +30,6 @@ services:
       - 8080:8080
     restart: unless-stopped
     depends_on:
-      - postgres
-    links:
       - postgres
 volumes:
   postgres-data:
