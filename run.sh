@@ -1,2 +1,1 @@
-docker build ./ -t springbootapp
-docker-compose up
+docker build ./ -t springbootapp && docker-compose up
