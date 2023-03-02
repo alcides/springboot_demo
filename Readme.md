@@ -31,7 +31,7 @@ Este comando vai iniciar dois containers:
 * Um com a aplicação que existe nesta pasta, com hot reloading.
 * Uma instância de um container com Postgres
 
-#" Terceiro passo
+## Terceiro passo
 
 Abrir http://localhost:8080 num browser e verificar que aparece a string "Olá Mundo".
 
