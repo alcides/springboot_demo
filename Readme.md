@@ -31,8 +31,20 @@ Este comando vai iniciar dois containers:
 * Um com a aplicação que existe nesta pasta, com hot reloading.
 * Uma instância de um container com Postgres
 
-# Terceiro passo
+#" Terceiro passo
 
 Abrir http://localhost:8080 num browser e verificar que aparece a string "Olá Mundo".
 
 Pode ainda confirmar que consegue ver um objecto JSON em http://localhost:8080/api/author/1
+
+
+# FAQ
+
+## O Docker não instala em ubuntu.
+
+Tentar [desta forma](https://askubuntu.com/a/1411717).
+
+## O `run.sh`não está a correr no meu macos m1.
+
+Tentar correr `docker ps`. Se não funcionar, [tentar isto](https://stackoverflow.com/a/68202428/28516).
+Confirmar também que está instalado o Docker Desktop (`brew install --cask docker`) e não apenas a command-line tool (`brew install docker`). A aplicação Docker deve também estar a correr (icon na menubar).
