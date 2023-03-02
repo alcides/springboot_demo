@@ -42,6 +42,7 @@ Pode ainda confirmar que consegue ver um objecto JSON em http://localhost:8080/a
 
 ## Preciso de `sudo` para correr o `run.sh`
 Tenta correr `sudo usermod -aG docker $USER` seguido de um log-out na máquina.
+Ou tentar [desta forma](https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 
 ## O Docker não instala em ubuntu.
 
