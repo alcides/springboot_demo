@@ -8,8 +8,12 @@ Este projecto serve para verificar que todas as dependências necessárias ao pr
 
 Este projecto necessita de:
 
-* Docker
-* Python 3
+* [Docker Desktop](https://docs.docker.com/get-docker/) (ou Docker + [Docker Compose](https://docs.docker.com/compose/install/))
+* [Python 3 and Pip](https://docs.python-guide.org/starting/install3/linux/)
+
+```
+sudo apt-get install docker docker-compose python3 python-pip-whl
+```
 
 Na realidade o projecto vai usar Java17+ e Postgres, mas esses vão estar disponíveis pelos containers. Só são necessários se quiser correr a aplicação nativamente.
 
