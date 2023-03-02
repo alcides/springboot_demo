@@ -40,6 +40,9 @@ Pode ainda confirmar que consegue ver um objecto JSON em http://localhost:8080/a
 
 # FAQ
 
+## Preciso de `sudo` para correr o `run.sh`
+Tenta correr `sudo usermod -aG docker $USER` seguido de um log-out na máquina.
+
 ## O Docker não instala em ubuntu.
 
 Tentar [desta forma](https://askubuntu.com/a/1411717).
