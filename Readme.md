@@ -61,3 +61,7 @@ Correr numa bash (tanto a Git Bash, MSys2 bash ou WSL em linux) e não na Powers
 ## `docker compose` não funciona
 
 `docker compose` é o comando da última versão de docker. `docker-compose` é a versão antiga. Devem actualizar o docker.
+
+## Em vez de Ubuntu, uso Fedora.
+
+Instalar os mesmos pacotes, mas usando `dnf` em vez do `apt`, e ajustar o nome dos pacotes.
