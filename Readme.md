@@ -6,29 +6,40 @@ Este projecto serve para verificar que todas as dependências necessárias ao pr
 
 ## Dependências
 
-Este projecto necessita de:
+Este projecto vai usar Java17+ e Postgres, mas esses vão estar disponíveis dentro dos containers Docker. Só são necessários se quiser correr a aplicação nativamente.
 
-* [Docker Desktop](https://docs.docker.com/get-docker/) (ou Docker + [Docker Compose](https://docs.docker.com/compose/install/))
-* [Python 3 and Pip](https://docs.python-guide.org/starting/install3/linux/)
+### Windows
+
+Instalar [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) e [Python 3]](https://www.python.org/ftp/python/3.11.2/python-3.11.2-amd64.exe))
+
+### Ubuntu
 
 ```
-sudo apt-get install docker docker-compose python3 python3-pip
+sudo apt-get python3 python3-pip
 ```
 
-Na realidade o projecto vai usar Java17+ e Postgres, mas esses vão estar disponíveis pelos containers. Só são necessários se quiser correr a aplicação nativamente.
+Seguir [esta página](https://docs.docker.com/engine/install/ubuntu/) e os quatro passos listados [aqui](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
+
+### Fedora
+
+```
+sudo dnf python3 python3-pip
+```
+
+Seguir [esta página](https://docs.docker.com/engine/install/fedora/) e os quatro passos listados [aqui](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
 
 
 ## Primeiro passo
 
-Deve correr o ficheiro `setup.sh`.
+Deve correr os comandos listados no ficheiro `setup.sh`.
 
 ## Segundo passo
 
-Deve correr o ficheiro `run.sh`.
+Deve correr `run.sh`.
 
 Este comando vai iniciar dois containers:
 
-* Um com a aplicação que existe nesta pasta, com hot reloading.
+* Um com a aplicação que existe nesta pasta.
 * Uma instância de um container com Postgres
 
 ## Terceiro passo
@@ -48,7 +59,7 @@ Ou tentar [desta forma](https://www.digitalocean.com/community/questions/how-to-
 
 Tentar [desta forma](https://askubuntu.com/a/1411717).
 
-## O `run.sh`não está a correr no meu macos m1.
+## O `run.sh` não está a correr no meu macos m1.
 
 Tentar correr `docker ps`. Se não funcionar, [tentar isto](https://stackoverflow.com/a/68202428/28516).
 Confirmar também que está instalado o Docker Desktop (`brew install --cask docker`) e não apenas a command-line tool (`brew install docker`). A aplicação Docker deve também estar a correr (icon na menubar).
@@ -61,7 +72,3 @@ Correr numa bash (tanto a Git Bash, MSys2 bash ou WSL em linux) e não na Powers
 ## `docker compose` não funciona
 
 `docker compose` é o comando da última versão de docker. `docker-compose` é a versão antiga. Devem actualizar o docker.
-
-## Em vez de Ubuntu, uso Fedora.
-
-Instalar os mesmos pacotes, mas usando `dnf` em vez do `apt`, e ajustar o nome dos pacotes.
