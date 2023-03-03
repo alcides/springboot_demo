@@ -12,7 +12,7 @@ Este projecto necessita de:
 * [Python 3 and Pip](https://docs.python-guide.org/starting/install3/linux/)
 
 ```
-sudo apt-get install docker docker-compose python3 python-pip-whl
+sudo apt-get install docker docker-compose python3 python3-pip
 ```
 
 Na realidade o projecto vai usar Java17+ e Postgres, mas esses vão estar disponíveis pelos containers. Só são necessários se quiser correr a aplicação nativamente.
@@ -57,3 +57,7 @@ Confirmar também que está instalado o Docker Desktop (`brew install --cask doc
 ## Estou em windows e o `bash setup.sh` não funciona
 
 Correr numa bash (tanto a Git Bash, MSys2 bash ou WSL em linux) e não na Powershell, nem no CMD.exe.
+
+## `docker compose` não funciona
+
+`docker compose` é o comando da última versão de docker. `docker-compose` é a versão antiga. Devem actualizar o docker.
