@@ -52,3 +52,8 @@ Tentar [desta forma](https://askubuntu.com/a/1411717).
 
 Tentar correr `docker ps`. Se não funcionar, [tentar isto](https://stackoverflow.com/a/68202428/28516).
 Confirmar também que está instalado o Docker Desktop (`brew install --cask docker`) e não apenas a command-line tool (`brew install docker`). A aplicação Docker deve também estar a correr (icon na menubar).
+
+
+## Estou em windows e o `bash setup.sh` não funciona
+
+Correr numa bash (tanto a Git Bash, MSys2 bash ou WSL em linux) e não na Powershell, nem no CMD.exe.
