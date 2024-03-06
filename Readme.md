@@ -15,7 +15,7 @@ Instalar [Docker Desktop](https://docs.docker.com/desktop/install/windows-instal
 ### Ubuntu
 
 ```
-sudo apt-get python3 python3-pip
+sudo apt-get install python3 python3-pip
 ```
 
 Seguir [esta página](https://docs.docker.com/engine/install/ubuntu/) e os quatro passos listados [aqui](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user).
